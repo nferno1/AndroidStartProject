@@ -4,56 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!--    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="HelloWord!"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/normal"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="Привет Медвед !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
-
-    <TextView
-        android:id="@+id/text"
-        android:textSize="36sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Android is the best"
-        android:layout_marginBottom="100dp"
+        android:background="#00f"
+        android:text="width 200dp"
+        android:textColor="#FFF"
+        android:padding="20dp"
+        android:textStyle="normal"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
         />
 
-
-    <View
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:foreground="@drawable/ic_launcher_background"
-        android:text="abcd"
-        />
-    <Button
-        android:id="@+id/button"
+    <TextView
+        android:id="@+id/bold"
+        android:layout_width="410dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:background="#00f"
+        android:gravity="bottom|end"
+        android:padding="20dp"
+        android:text="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/italic"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
+        android:background="#00f"
+        android:text="match_parent"
+        android:textColor="#FFF"
         android:gravity="center"
-        android:text="Approve"
+        android:padding="20dp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:textSize="30dp"
         />
+
+
+  
 </LinearLayout>
